@@ -8,11 +8,9 @@ import java.time.LocalDate;
 
 public class Test {
 
-    public static void displayProduct2(Transaction transaction, Session session) {
-        transaction.begin();
+    public static void displayProduct2(Session session) {
         Product productFound = session.load(Product.class, 2);
         System.out.println(productFound);
-        transaction.commit();
     }
     public static void deleteProduct3(Transaction transaction, Session session) {
         transaction.begin();

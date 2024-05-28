@@ -33,7 +33,7 @@ public class Main {
                     Test.createProducts(transaction, session);
                     break;
                 case 2:
-                    Test.displayProduct2(transaction, session);
+                    Test.displayProduct2(session);
                     break;
                 case 3:
                     Test.deleteProduct3(transaction, session);
